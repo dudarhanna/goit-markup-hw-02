@@ -17,7 +17,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  line-height: 1.71;
+  letter-spacing: 0.03em;
   color: var(--main-txt-cl);
   background-color: var(--white-cl);
 }
@@ -27,6 +27,19 @@ body {
 }
 .list {
   list-style: none;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Кнопка на головнвій */
@@ -106,10 +119,6 @@ body {
   color: var(--white-cl);
 }
 .hero {
-  width: 1600px;
-  height: 600px;
-  left: 0px;
-  top: 80px;
   background-color: var(--hero-footer-bg-cl);
 
   /* Заголовки */
@@ -130,9 +139,6 @@ body {
   text-transform: uppercase;
 }
 /* Описання */
-.section-tittle-text {
-  letter-spacing: 0.03em;
-}
 .section-tittle-text-benefits {
   font-size: 14px;
   line-height: 1.71;
@@ -145,15 +151,15 @@ body {
 .section-team {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.90;
   letter-spacing: 0.03em;
   color: var(--black-cl);
 }
+.team {
+  background: var(--background-btn);
+}
 /* Футер */
 .page-footer {
-  position: absolute;
-  width: 1600px;
-  height: 252px;
   background: var(--hero-footer-bg-cl);
 }
 .footer-address {
@@ -197,6 +203,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--black-cl);
   background-color: var(--background-btn);
+  cursor: pointer;
 }
 .btn-portfolio:hover,
 .btn-portfolio:focus {
